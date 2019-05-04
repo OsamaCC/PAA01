@@ -5,12 +5,11 @@
 #include <fstream>
 #include "algorithms.h"
 using namespace std;
-void insertion_sort(int vetor[], int n)
+void insertion_sort(int *vetor, int n)
 {
     int i, temp, j;
     int swap = 0;
     int comp = 0;
-    cout << "Initializing insertion sort." << endl;
     for (i = 1; i < n; i++)
     {
         j = i;
@@ -28,7 +27,4 @@ void insertion_sort(int vetor[], int n)
 //    }
     cout << "Number of comparations: " << comp << endl;
     cout << "Number of swaps: " << swap << endl;
-    cout << "End of insertion sort." << endl;
-    cout << "--------------------------------------------------------------------------------" << endl;
-
 }

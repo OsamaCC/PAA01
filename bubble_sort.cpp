@@ -6,7 +6,7 @@
 #include <fstream>
 #include "algorithms.h"
 using namespace std;
-void bubble_sort (int vetor[], int n)
+void bubble_sort (int *vetor, int n)
 {
     int i, j, aux;
     int swap = 0;
@@ -28,8 +28,6 @@ void bubble_sort (int vetor[], int n)
 //    for (i = 0; i < n; i++) {
 //        cout << "element[" << i + 1 << "] = " << vetor[i] << endl;
 //    }
-    cout << "Number of comparations: " << comp << endl;
+    cout << "Number of comparisons: " << comp << endl;
     cout << "Number of swaps: " << swap << endl;
-    cout << "End of bubble sort." << endl;
-    cout << "--------------------------------------------------------------------------------" << endl;
 }

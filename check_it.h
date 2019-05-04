@@ -7,5 +7,4 @@
 
 int check_iterator(int i);
 
-
 #endif //TRABALHO01_CHECK_IT_H

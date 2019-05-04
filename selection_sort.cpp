@@ -5,20 +5,19 @@
 #include "algorithms.h"
 using namespace std;
 
-void selection_sort(int vetor[], int n)
+void selection_sort(int *vetor, int n)
 {
     int aux, min, i, j;
     int comp = 0;
     int swap = 0;
-    cout << "Initializing selection sort." << endl;
     for(i = 0; i < n-1; i++)
     {
         min = i;
         for(j = i+1; j < n; j++ )
         {
+            comp++;
             if(vetor[j] < vetor[min])
             {
-                comp++;
                 min = j;
             }
 
@@ -36,7 +35,4 @@ void selection_sort(int vetor[], int n)
 //    }
     cout << "Number of comparations: " << comp << endl;
     cout << "Number of swaps: " << swap << endl;
-    cout << "End of insertion sort." << endl;
-    cout << "--------------------------------------------------------------------------------" << endl;
-
 }
